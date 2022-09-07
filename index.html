@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Form</title>
+    <link rel='stylesheet' href='./style.css'>
+    <script src='./code.js'></script>
+</head>
+<body>
+    <div class='container'>
+        <div class='sidebar'>
+            <div class='logo'><img src='skullHand.svg' alt='Skeleton Hand' width='250px' height='250px'></div>
+            <div class='credit'><p>Photo by <u>Halie West</u> on <u>Unsplash</u></p></div>
+        </div>
+        <div class='form-container'>
+            <div class='intro'>
+                <p>
+                    This is not a real online service! You know you need something like this
+                    in your life to help you realize your deepest dreams. Sign up <em>now</em> 
+                    to get started.
+                </p>
+                <br>
+                <p>
+                    You <em>know</em> you want to.
+                </p> 
+            </div>
+            <div class='inputSection'>
+                <h3>Let's Do This!</h3>
+                <div class='txtBox'>
+                    <form action='' method='post'>
+                        <label for='firstName'>First Name</label>
+                        <input type='text' id='firstName' name='firstName' required>
+                    </form>
+                    <form action='' method='post'>
+                        <label for='lastName'>Last Name</label>
+                        <input type='text' id='lastName' name='lastName' required>
+                    </form>
+                    <form action='' method='post'>
+                        <label for='userEmail'>Email</label>
+                        <input type='email' id='userEmail' name='email' required>
+                    </form>
+                    <form action='' method='post'>
+                        <label for='phoneNumber'>Phone Number</label>
+                        <input type='tel' id='phoneNumber' name='phoneNumber' pattern='(\d{3}\d{3}\d{4}?)' required>
+                    </form>
+                    <form action='' method='post'>
+                        <label for='userPass'>Password</label>
+                        <input class='error' type='password' id='userPass' name='password' required minlength="6">
+                    </form>
+                    <form action='' method='post'>
+                        <label for='confirmPass'>Confirm Password</label>
+                        <input class='error' type='password' id='confirmPass' name='password' required>
+                    </form>
+                </div>
+            </div>
+            <div class='submitSection'>
+                <button>Create Account</button>
+                <p>Already have an account? <a href=''>Log in</a></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
